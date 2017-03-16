@@ -1,124 +1,140 @@
-body{
-    font: 12px/1.5 Arial,Verdana,"Microsoft YaHei","\5b8b\4f53",serif;
-    -webkit-font-smoothing:antialiased;
-    background:#fff;
-    color:#666;
+body {
+    font: 12px/1.5 Arial, Verdana, "Microsoft YaHei", "\5b8b\4f53", serif;
+    -webkit-font-smoothing: antialiased;
+    background: #fff;
+    color: #666;
 }
-ul li,ol li{list-style: none;}
-a{text-decoration: none;color:#666;}
-a:hover{color: #C81623;}
-i{}
-.clearfix:after{
+
+ul li, ol li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+.clearfix:after {
     content: " ";
     display: block;
     clear: both;
 }
-.topbar_wrapper{
+
+.topbar_wrapper {
     width: 100%;
     background: #F1F1F1;
 }
-.topbar{
+
+.topbar {
     width: 1210px;
-    margin:0 auto;
-    height: 31px;
+    margin: 0 auto;
 }
-.topbar_lf{
-    float: left;
-    line-height: 30px;
-    position: relative;
-}
-.topbar_lf{
+
+.topbar_lf {
     display: inline-block;
-    padding:0 10px;
-    border-left: 1px solid transparent;
-    border-right:1px solid transparent;
+    line-height: 30px;
 }
-.locationPicker ul{
+
+.location {
+    position: relative;
+    border-left: 1px solid #F1F1F1;
+    border-right: 1px solid #F1F1F1;
+    border-bottom: 1px solid #F1F1F1;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.locationPicker {
     position: absolute;
-    left: -1px;
-    top:100%;
-    width:311px;
-    border:1px solid #ddd;
+    width: 311px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
     line-height: 24px;
-    padding:10px 0 0 10px;
     display: none;
     background: #fff;
-    z-index: 10;
+    margin-top: -1px;
 }
-.locationPicker ul li{
+
+.locationPicker li {
     float: left;
     width: 60px;
     height: 24px;
-    padding:2px 0;
+    padding: 2px 0;
 }
-.locationPicker ul a{
-    padding:0 8px;
+
+.locationPicker a {
+    padding: 0 8px;
     cursor: pointer;
     line-height: 24px;
     vertical-align: top;
     display: inline-block;
 }
-.selected{
+
+.selected {
     color: white;
     background: #C81623;
 }
-.selected:hover{
+
+.selected:hover {
     color: white;
     background: #C81623;
 }
-.topbar_lf:hover{
-    background: #fff;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+
+.topbar_lf:hover .location {
+    background: #FFF;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    border-bottom: 1px solid #FFF;
 }
-.topbar_lf:hover ul{
+
+.topbar_lf:hover ul {
     display: block;
 }
-.topbar span:after{
-    content: "";
-    display: block;
-    background: #fff;
-    height: 1px;
-    top: 100%;
-    right: 0;
-    left:0;
-    position: absolute;
-    z-index: 1;
-}
-.topbar_lf>span .i-arrow{
+
+.topbar_lf .i-arrow {
     display: inline-block;
     vertical-align: middle;
 }
-.topbar_lf:hover .i-arrow{
-    transition:transform 0.1s ease-in;
-    transform:rotate(180deg);
+
+.topbar_lf:hover .i-arrow {
+    transition: transform 0.1s ease-in;
+    transform: rotate(180deg);
 }
 
 /*links*/
-.site_links{
+.site_links {
     float: right;
     line-height: 31px;
 }
-.split{
+
+.split {
     height: 15px;
     width: 1px;
     background: #ddd;
     display: inline-block;
     vertical-align: middle;
-    margin:0 1px;
+    margin: 0 1px;
 }
-.site_links>a{
-    padding:0 8px;
+
+.site_links > a {
+    padding: 0 8px;
 
 }
-.site_links> a:hover{
+
+.site_links > a:hover {
     color: #C81623
 }
-.site_links .i-arrow,.site_links .i-phone{
+
+.site_links .i-arrow, .site_links .i-phone {
     display: inline-block;
     vertical-align: middle;
 }
-.site_links > a:hover  .i-arrow{
+
+.site_links > a:hover .i-arrow {
     transform: rotate(180deg);
-    transition:transform 0.1s ease-in;
+    transition: transform 0.1s ease-in;
 }
