@@ -130,7 +130,7 @@ img {
 	margin-left: 4px;
 }
 
-.location-wrapper:hover  > .location {
+.location-wrapper:hover > .location {
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
 	background-color: #fff;
