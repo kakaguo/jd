@@ -237,10 +237,6 @@ img {
 	padding-left: 25px;
 }
 
-.links > li#apps:hover > .dropdown {
-	padding-left: 25px;
-}
-
 .links > li#apps:hover .i-phone {
 	color: #c81623;
 }
@@ -261,7 +257,6 @@ img {
 	transition: 0.2s;
 }
 
-li#atte > .dropdown-layer,
 li#myjd > .dropdown-layer,
 li#apps > .dropdown-layer,
 li#serv > .dropdown-layer,
@@ -270,7 +265,6 @@ li#navs > .dropdown-layer {
 }
 
 li#myjd:hover > .dropdown-layer,
-li#atte:hover > .dropdown-layer,
 li#apps:hover > .dropdown-layer,
 li#serv:hover > .dropdown-layer,
 li#navs:hover > .dropdown-layer {
@@ -278,7 +272,6 @@ li#navs:hover > .dropdown-layer {
 }
 
 li#myjd .dd-spacer,
-li#atte .dd-spacer,
 li#serv .dd-spacer {
 	width: 82px;
 }
@@ -321,20 +314,6 @@ li#myjd .otherlist > li {
 	width: 126px;
 }
 
-li#myjd .viewlist {
-	width: 250px;
-	padding: 10px 15px;
-	border-top: 1px dotted #ccc;
-}
-
-li#myjd .viewlist h4 {
-	font-weight: 700;
-}
-
-li#atte .dd-inner {
-	padding-bottom: 8px;
-}
-
 li#navs {
 	padding: 0 1px 0 2px;
 }
@@ -347,64 +326,6 @@ li#apps > .dropdown-layer {
 	width: 250px;
 	height: 195px;
 	background: url(../images/apps.png) no-repeat;
-}
-
-li#apps > .dropdown-layer a {
-	position: absolute;
-	width: 56px;
-	height: 44px;
-	text-indent: -2000px;
-}
-
-li#apps > .dropdown-layer .link {
-	width: 100px;
-	height: 20px;
-	overflow: hidden;
-}
-
-li#apps > .dropdown-layer .link1 {
-	left: 92px;
-	top: 6px;
-}
-
-li#apps > .dropdown-layer .link2 {
-	left: 92px;
-	top: 104px;
-}
-
-li#apps > .dropdown-layer .link3 {
-	top: 46px;
-}
-
-li#apps > .dropdown-layer .link4,
-li#apps > .dropdown-layer .link5 {
-	left: 99px;
-	top: 23px;
-	width: 136px;
-	color: #c21a21;
-	text-indent: 0;
-	cursor: default;
-}
-
-li#apps > .dropdown-layer .link5 {
-	top: 120px;
-}
-
-li#apps > .dropdown-layer .jdapp-ios {
-	left: 92px;
-}
-
-li#apps > .dropdown-layer .jdapp-ipad {
-	left: 202px;
-}
-
-li#apps > .dropdown-layer .jdapp-android {
-	left: 147px;
-}
-
-li#apps > .dropdown-layer .wyapp-ios,
-li#apps > .dropdown-layer .wyapp-android {
-	top: 143px;
 }
 
 li#apps .dd-spacer {
