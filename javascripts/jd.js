@@ -11,3 +11,21 @@
 	});
 
 })();
+
+$(function(){
+	$(".slides").slidesjs({
+		width: 730,
+		height: 454,
+		navigation: {
+			active: false,
+		},
+		pagination: {
+			active: false
+		},
+		play: {
+			auto: true,
+			interval: 2000,
+			pauseOnHover: true
+		}
+	});
+});
