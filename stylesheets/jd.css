@@ -777,3 +777,26 @@ li#navs dl > dd {
 	top: 391px;
 	right: 0;
 }
+
+/* 底部导航 */
+.footer-wrapper {
+	margin-top: 20px;
+	border-top: 1px solid #E5E5E5;
+	padding: 10px 0 30px;
+	text-align: center;
+}
+
+.footer-wrapper .links a {
+	margin: 0 10px;
+}
+
+.footer-wrapper .copyright {
+	margin: 10px 0;
+}
+.footer-wrapper .copyright img {
+	margin-top: -2px;
+}
+.footer-wrapper .authentication li {
+	display: inline-block;
+	margin: 0 5px;
+}
