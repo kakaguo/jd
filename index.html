@@ -1,99 +1,591 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>jd</title>
-    <link rel="stylesheet" href="typo.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1467513602_7087555.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="topbar_wrapper">
-        <div class="topbar">
-            <div class="topbar_lf">
-                <div class="location">送至：北京<span class="icon-jd i-arrow"></span></div>
-                <ul class="locationPicker clearfix">
-                    <li><a href="javascript:;" class="selected">北京</a></li>
-                    <li><a href="javascript:;">上海</a></li>
-                    <li><a href="javascript:;">天津</a></li>
-                    <li><a href="javascript:;">重庆</a></li>
-                    <li><a href="javascript:;">河北</a></li>
-                    <li><a href="javascript:;">山西</a></li>
-                    <li><a href="javascript:;">河南</a></li>
-                    <li><a href="javascript:;">辽宁</a></li>
-                    <li><a href="javascript:;">吉林</a></li>
-                    <li><a href="javascript:;">黑龙江</a></li>
-                    <li><a href="javascript:;">内蒙古</a></li>
-                    <li><a href="javascript:;">江苏</a></li>
-                    <li><a href="javascript:;">山东</a></li>
-                    <li><a href="javascript:;">安徽</a></li>
-                    <li><a href="javascript:;">浙江</a></li>
-                    <li><a href="javascript:;">福建</a></li>
-                    <li><a href="javascript:;">湖北</a></li>
-                    <li><a href="javascript:;">湖南</a></li>
-                    <li><a href="javascript:;">广东</a></li>
-                    <li><a href="javascript:;">广西</a></li>
-                    <li><a href="javascript:;">江西</a></li>
-                    <li><a href="javascript:;">四川</a></li>
-                    <li><a href="javascript:;">海南</a></li>
-                    <li><a href="javascript:;">贵州</a></li>
-                    <li><a href="javascript:;">云南</a></li>
-                    <li><a href="javascript:;">西藏</a></li>
-                    <li><a href="javascript:;">陕西</a></li>
-                    <li><a href="javascript:;">甘肃</a></li>
-                    <li><a href="javascript:;">青海</a></li>
-                    <li><a href="javascript:;">宁夏</a></li>
-                    <li><a href="javascript:;">新疆</a></li>
-                    <li><a href="javascript:;">台湾</a></li>
-                    <li><a href="javascript:;">香港</a></li>
-                    <li><a href="javascript:;">澳门</a></li>
-                    <li><a href="javascript:;">钓鱼岛</a></li>
-                    <li><a href="javascript:;">海外</a></li>
-                </ul>
-            </div>
-            <div class="site_links">
-                <a href="#">你好，请登录</a><a href="#">免费注册</a>
-                <span class="split"></span>
-                <a href="#">我的订单</a>
-                <span class="split"></span>
-                <a href="#">我的京东<span class="icon-jd i-arrow"></span></a>
-                <span class="split"></span>
-                <a href="#">京东会员</a>
-                <span class="split"></span>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>京东</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1464142669_501641.css">
+		<link rel="stylesheet" href="stylesheets/normalize.css">
+		<link rel="stylesheet" href="stylesheets/jd.css">
+	</head>
+	<body>
+		<!-- siteTopbar -->
+		<nav class="siteTopbar">
+			<div class="layout clearfix">
+				<div class="location-wrapper fl">
+					<span class="location">
+						送至：北京<i class="icon-jd i-arrow"></i>
+					</span>
+					<div class="locationPicker">
+						<div class="dd-spacer"></div>
+						<ul class="location-list clearfix">
+							<li><a class="selected" href="javascript:;">北京</a></li>
+							<li><a href="javascript:;">上海</a></li>
+							<li><a href="javascript:;">天津</a></li>
+							<li><a href="javascript:;">重庆</a></li>
+							<li><a href="javascript:;">河北</a></li>
+							<li><a href="javascript:;">山西</a></li>
+							<li><a href="javascript:;">河南</a></li>
+							<li><a href="javascript:;">辽宁</a></li>
+							<li><a href="javascript:;">吉林</a></li>
+							<li><a href="javascript:;">黑龙江</a></li>
+							<li><a href="javascript:;">内蒙古</a></li>
+							<li><a href="javascript:;">江苏</a></li>
+							<li><a href="javascript:;">山东</a></li>
+							<li><a href="javascript:;">安徽</a></li>
+							<li><a href="javascript:;">浙江</a></li>
+							<li><a href="javascript:;">福建</a></li>
+							<li><a href="javascript:;">湖北</a></li>
+							<li><a href="javascript:;">湖南</a></li>
+							<li><a href="javascript:;">广东</a></li>
+							<li><a href="javascript:;">广西</a></li>
+							<li><a href="javascript:;">江西</a></li>
+							<li><a href="javascript:;">四川</a></li>
+							<li><a href="javascript:;">海南</a></li>
+							<li><a href="javascript:;">贵州</a></li>
+							<li><a href="javascript:;">云南</a></li>
+							<li><a href="javascript:;">西藏</a></li>
+							<li><a href="javascript:;">陕西</a></li>
+							<li><a href="javascript:;">甘肃</a></li>
+							<li><a href="javascript:;">青海</a></li>
+							<li><a href="javascript:;">宁夏</a></li>
+							<li><a href="javascript:;">新疆</a></li>
+							<li><a href="javascript:;">台湾</a></li>
+							<li><a href="javascript:;">香港</a></li>
+							<li><a href="javascript:;">澳门</a></li>
+							<li><a href="javascript:;">钓鱼岛</a></li>
+							<li><a href="javascript:;">海外</a></li>
+						</ul>
+					</div>
+				</div>
+				<ul class="links fr clearfix">
+					<li>
+						<a href="#">你好，请登录</a>
+						<a class="register" href="#">免费注册</a>
+					</li>
+					<li class="split"></li>
+					<li>
+						<div class="dropdown">
+							<a href="#">我的订单</a>
+						</div>
+					</li>
+					<li class="split"></li>
+					<li id="myjd" class="links-wrapper">
+							<div class="dropdown">
+								<a href="">我的京东</a>
+								<i class="icon-jd i-arrow"></i>
+							</div>
+							<div class="dropdown-layer">
+								<div class="dd-spacer"></div>
+								<div class="userinfo">
+									<i class="u-pic">
+										<a href="#">
+											<img src="images/no-img.jpg" alt="icon">
+										</a>
+									</i>
+									<h3 class="u-login">
+										<a href="#">你好，请登录</a>
+									</h3>
+									<p class="u-meesage">
+										<a href="#">优惠券</a>
+										&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+										<a href="#">消息</a>
+									</p>
+								</div>
+								<ul class="otherlist clearfix">
+									<li><a href="#">待处理订单</a></li>
+									<li><a href="#">我的关注</a></li>
+									<li><a href="#">咨询回复</a></li>
+									<li><a href="#">我的京豆</a></li>
+									<li><a href="#">降价商品</a></li>
+									<li><a href="#">我的理财</a></li>
+									<li><a href="#">返修退换货</a></li>
+									<li><a href="#">京东白条</a></li>
+								</ul>
+								<div class="viewlist">
+									<div class="title clearfix">
+										<h4 class="fl">我的足迹</h4>
+										<a href="#" class="more fr">
+											更多&nbsp;>
+										</a>
+									</div>
+								</div>
+							</div>
+					</li>
+					<li class="split"></li>
+					<li>
+						<div class="dropdown">
+							<a href="#">京东会员</a>
+						</div>
+					</li>
+					<li class="split"></li>
+					<li>
+						<div class="dropdown">
+							<a href="#">企业采购</a>
+						</div>
+					</li>
+					<li class="split"></li>
+					<li id="apps" class="links-wrapper">
+						<div class="dropdown">
+							<i class="icon-jd i-phone"></i>
+							<a href="">手机京东</a>
+							<i class="icon-jd i-arrow"></i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dd-spacer"></div>
+							<a href="http://app.jd.com/" class="link link1" target="_blank">京东客户端</a>
+							<a href="http://dc2.jd.com/?rXkGQQ" class="link link2" target="_blank">京东钱包客户端</a>
+							<a href="http://itunes.apple.com/cn/app/id414245413" class="link3 jdapp-ios" target="_blank">京东客户端ios版</a>
+							<a href="http://storage.jd.com/jdmobile/JDMALL-PC2.apk" class="link3 jdapp-android" target="_blank">京东客户端android版</a>
+							<a href="https://itunes.apple.com/cn/app/jing-dong-hd/id434374726" class="link3 jdapp-ipad" target="_blank">京东客户端ipad版</a>
+							<a href="https://itunes.apple.com/cn/app/wang-yin-qian-bao/id832444218?mt=8" class="jdapp-ios wyapp-ios" target="_blank">京东钱包客户端ios版</a>
+							<a target="_blank" href="http://sq.jd.com/vFIRtq" class="jdapp-android wyapp-android" target="_blank">京东钱包客户端android版</a>
+							<a href="#" class="link link4">新人专享188元大礼包</a>
+							<a href="#" class="link link5">扫一扫封顶立减999元</a>
+						</div>
+					</li>
+					<li class="split"></li>
+					<li id="atte" class="links-wrapper">
+						<div class="dropdown">
+							关注京东
+							<i class="icon-jd i-arrow"></i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dd-spacer"></div>
+							<div class="dd-inner">
+								<img src="http://img12.360buyimg.com/da/jfs/t730/245/639798100/7883/8271c72d/54c84f72Ncc1a02a2.jpg" alt="">
+							</div>
+						</div>
+					</li>
+					<li class="split"></li>
+					<li id="serv" class="links-wrapper">
+						<div class="dropdown">
+							客户服务
+							<i class="icon-jd i-arrow"></i>
+						</div>
+						<div class="dropdown-layer">
+							<div class="dd-spacer"></div>
+							<div class="inner-client">
+								<h3>客户</h3>
+								<ul class="clearfix">
+									<li><a target="_blank" href="http://help.jd.com/index.html">帮助中心</a></li>
+									<li><a target="_blank" href="https://passport.jd.com/new/login.aspx?ReturnUrl=http%3A%2F%2Fmyjd.jd.com%2Fafs%2Flist%2FallRepairs.action">售后服务</a></li>
+									<li><a target="_blank" href="">在线客服</a></li>
+									<li><a target="_blank" href="https://passport.jd.com/new/login.aspx?ReturnUrl=http%3A%2F%2Fdd3-web.jd.com%2Fjdchat%2Fcustom.action%3Fentry%3Djd_fwztc">意见建议</a></li>
+									<li><a target="_blank" href="https://passport.jd.com/new/login.aspx?ReturnUrl=http%3A%2F%2Fmyjd.crm.jd.com%2Fopinion%2ForderList.action">电话客服</a></li>
+									<li><a target="_blank" href="http://www.jd.com/contact/service.html">客服邮箱</a></li>
+								</ul>
+							</div>
+							<div class="inner-tenant">
+								<h3>商户</h3>
+								<a target="_blank" href="http://xue.jd.com/">京东商学院</a>
+							</div>
+						</div>
+					</li>
+					<li class="split"></li>
+					<li id="navs" class="links-wrapper">
+						<div class="dropdown">
+							网站导航
+							<i class="icon-jd i-arrow"></i>
+						</div>
+						<div class="dropdown-layer clearfix">
+							<div class="dd-spacer"></div>
+							<dl class="serv1 fl">
+								<dt>特色主题</dt>
+								<dd><a target="_blank" href="http://pinpaijie.jd.com/">品牌街</a></dd>
+								<dd><a target="_blank" href="http://hao.jd.com/">好物100</a></dd>
+								<dd><a target="_blank" href="http://xinpin.jd.com/presale.html">京东预售</a></dd>
+								<dd><a target="_blank" href="http://zan.jd.com/">尖er货</a></dd>
+								<dd><a target="_blank" href="http://xinpin.jd.com/new.html">京东首发</a></dd>
+								<dd><a target="_blank" href="http://tuan.jd.com/quanguo-index.html">今日团购</a></dd>
+								<dd><a target="_blank" href="http://youhuiquan.jd.com/">优惠券</a></dd>
+								<dd><a target="_blank" href="http://red.jd.com/">闪购</a></dd>
+								<dd><a target="_blank" href="http://vip.jd.com/">京东会员</a></dd>
+								<dd><a target="_blank" href="http://xuan.jd.com/">天天低价</a></dd>
+								<dd><a target="_blank" href="http://ding.jd.com/">定期送</a></dd>
+								<dd><a target="_blank" href="http://diy.jd.com/">装机大师</a></dd>
+								<dd><a target="_blank" href="http://hao.jd.com/hwy.html">新奇特</a></dd>
+								<dd><a target="_blank" href="http://try.jd.com/">京东试用</a></dd>
+								<dd><a target="_blank" href="http://gift.jd.com/">礼品购</a></dd>
+								<dd><a target="_blank" href="http://smarthome.jd.com/">智能馆</a></dd>
+								<dd><a target="_blank" href="http://sale.jd.com/act/tp6KfYH7wb.html">玩bigger</a></dd>
+								<dd><a target="_blank" href="http://sale.jd.com/act/rKhJit1fWVDR.html">大牌免息</a></dd>
+								<dd><a target="_blank" href="http://sale.jd.com/act/3je8ZTCxNl6SusId.html">北京老字号</a></dd>
+							</dl>
+							<dl class="serv2 fl">
+								<dt>行业频道</dt>
+								<dd><a target="_blank" href="http://channel.jd.com/fashion.html">服装城</a></dd>
+								<dd><a target="_blank" href="http://channel.jd.com/electronic.html">家用电器</a></dd>
+								<dd><a target="_blank" href="http://channel.jd.com/computer.html">电脑办公</a></dd>
+								<dd><a target="_blank" href="http://shouji.jd.com/">手机</a></dd>
+								<dd><a target="_blank" href="http://channel.jd.com/beauty.html">美妆馆</a></dd>
+								<dd><a target="_blank" href="http://chaoshi.jd.com/">食品</a></dd>
+								<dd><a target="_blank" href="http://channel.jd.com/digital.html">数码</a></dd>
+								<dd><a target="_blank" href="http://baby.jd.com/">母婴</a></dd>
+								<dd><a target="_blank" href="http://channel.jd.com/jiazhuang.html">家装城</a></dd>
+								<dd><a target="_blank" href="http://channel.jd.com/sports.html">运动户外</a></dd>
+								<dd><a target="_blank" href="http://car.jd.com/?ccode=1502">整车</a></dd>
+								<dd><a target="_blank" href="http://book.jd.com/">图书</a></dd>
+								<dd><a target="_blank" href="http://nong.jd.com/">农资频道</a></dd>
+								<dd><a target="_blank" href="http://smart.jd.com/">京东智能</a></dd>
+							</dl>
+							<dl class="serv3 fl">
+								<dt>生活服务</dt>
+								<dd><a target="_blank" href="http://z.jd.com/sceneIndex.html">京东众筹</a></dd>
+								<dd><a target="_blank" href="http://baitiao.jd.com/activity/third">白条</a></dd>
+								<dd><a target="_blank" href="https://www.jdpay.com/">京东钱包</a></dd>
+								<dd><a target="_blank" href="http://trade.jr.jd.com/myxjk/jrbincome.action">京东小金库</a></dd>
+								<dd><a target="_blank" href="http://licai.jd.com/">理财</a></dd>
+								<dd><a target="_blank" href="http://chongzhi.jd.com/">话费</a></dd>
+								<dd><a target="_blank" href="http://trip.jd.com/">旅行</a></dd>
+								<dd><a target="_blank" href="http://caipiao.jd.com/">彩票</a></dd>
+								<dd><a target="_blank" href="http://game.jd.com/">游戏</a></dd>
+								<dd><a target="_blank" href="http://jipiao.jd.com/">机票酒店</a></dd>
+								<dd><a target="_blank" href="http://movie.jd.com/index.html">电影票</a></dd>
+								<dd><a target="_blank" href="http://chongzhi.jd.com/index.action?bussType=3">水电煤</a></dd>
+								<dd><a target="_blank" href="https://daojia.jd.com/activity/welcome.html">京东到家</a></dd>
+								<dd><a target="_blank" href="http://smartcloud.jd.com/app">京东微联</a></dd>
+								<dd><a target="_blank" href="http://try-smart.jd.com/">京东众测</a></dd>
+							</dl>
+							<dl class="serv4 fl">
+								<dt>更多精选</dt>
+								<dd><a target="_blank" href="http://sale.jd.com/act/n0hAvqy5CW8.html">京东社区</a></dd>
+								<dd><a target="_blank" href="http://mobile.jd.com/index.do">京东通信</a></dd>
+								<dd><a target="_blank" href="http://read.jd.com/">在线读书</a></dd>
+								<dd><a target="_blank" href="http://o.jd.com/market/index.action">京东E卡</a></dd>
+								<dd><a target="_blank" href="http://group.jd.com/site/20000121/20000032.htm">智能社区</a></dd>
+								<dd><a target="_blank" href="http://group.jd.com/index/20000001.htm">游戏社区</a></dd>
+								<dd><a target="_blank" href="http://you.jd.com/index.html?entrance=jd_home">京友邦</a></dd>
+								<dd><a target="_blank" href="http://sale.jd.com/act/wQTpIm7GnXE.html">卖家入驻</a></dd>
+								<dd><a target="_blank" href="http://b.jd.com/">企业采购</a></dd>
+								<dd><a target="_blank" href="http://fw.jd.com/">服务市场</a></dd>
+								<dd><a target="_blank" href="http://zhaomu.jd.com/XCDLzm.html">乡村招募</a></dd>
+								<dd><a target="_blank" href="http://zhaomu.jd.com/intro.html">校园加盟</a></dd>
+								<dd><a target="_blank" href="http://channel.jd.com/office.html">办公生活馆</a></dd>
+								<dd><a target="_blank" href="http://ipr.jd.com/">知识产权维权</a></dd>
+								<dd><a target="_blank" href="http://www.joybuy.com/">English Site</a></dd>
+							</dl>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- /siteTopbar -->
 
-                <a href="#">企业采购</a>
-                <span class="split"></span>
-                <a href="#"><span class="icon-jd i-phone"></span>手机京东<span class="icon-jd i-arrow"></span></a>
-                <span class="split"></span>
+		<!-- siteBanner -->
+		<div class="siteBanner">
+			<div class="layout">
+				<img src="images/siteBanner.jpg" alt="">
+				<a href="#" class="icon-jd i-close"></a>
+			</div>
+		</div>
+		<!-- /siteBanner -->
 
-                <a href="#">关注京东<span class="icon-jd i-arrow"></span></a>
-                <span class="split"></span>
+		<!-- logo-search-cart -->
+		<div class="logo-search-cart">
+			<div class="layout clearfix">
+				<div class="logo fl">
+					<img src="images/logo.png" alt="京东">
+				</div>
+				<div class="search fl">
+					<div class="search-top clearfix">
+						<input type="text" class="text fl" placeholder="测试">
+						<input type="button" class="btn fl" value="搜索">
+					</div>
+					<ul class="search-links clearfix">
+						<li><a href="#" class="selected">超值预售</a></li>
+						<li><a href="#">家电618</a></li>
+						<li><a href="#">多肉植物</a></li>
+						<li><a href="#">低价抢拍</a></li>
+						<li><a href="#">188减60</a></li>
+						<li><a href="#">爆裂飞车</a></li>
+						<li><a href="#">天王</a></li>
+						<li><a href="#">免费试用</a></li>
+						<li><a href="#">钢笔</a></li>
+					</ul>
+				</div>
+				<div class="cart fr">
+					<div class="dropdown">
+						<i class="icon-jd i-cart"></i>
+						<a href="#">我的购物车</a>
+						<i class="i-count">0</i>
+						<i class="icon-jd i-right"></i>
+					</div>
+					<div class="dropdown-layer">
+						<div class="dd-spacer"></div>
+						<i class="fl"></i>
+						购物车中还没有商品，赶紧选购吧！
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /logo-search-cart -->
 
-                <a href="#">客户服务<span class="icon-jd i-arrow"></span></a>
-                <span class="split"></span>
+		<!-- siteNav -->
+		<nav class="siteNav">
+			<div class="layout clearfix">
+				<h2 class="productCategory fl">
+					<a href="">全部商品分类</a>
+				</h2>
+				<ul class="siteNav-list fl">
+					<li><a href="http://channel.jd.com/fashion.html" target="_blank">服装城</a></li>
+					<li><a href="http://beauty.jd.com/" target="_blank">美妆馆</a></li>
+					<li><a href="http://chaoshi.jd.com/" target="_blank">超市</a></li>
+					<li><a href="http://fresh.jd.com/" target="_blank">生鲜</a></li>
+					<li><a href="http://www.jd.hk/" target="_blank">全球购</a></li>
+					<li><a href="http://red.jd.com/" target="_blank">闪购</a></li>
+					<li><a href="http://tuan.jd.com/quanguo-index.html" target="_blank">团购</a></li>
+					<li><a href="http://auction.jd.com/home.html" target="_blank">拍卖</a></li>
+					<li><a href="http://jr.jd.com/" target="_blank">金融</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- /siteNav -->
 
-                <a href="#">网站导航<span class="icon-jd i-arrow"></span></a>
-                <span class="split"></span>
+		<!-- list-slides-news-service -->
+		<div class="list-slides-news-service">
+			<div class="layout clearfix">
+				<div class="productCategoryList fl">
+					<div class="item">
+						<h3>
+							<a href="#">家用电器</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">手机、数码、京东通信</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">电脑、办公</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">家居、家具、家装、厨具</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">男装、女装、童装、内衣</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">个护化妆、清洁用品、宠物</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">鞋靴、箱包、珠宝、奢侈品</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">运动户外、钟表</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">汽车、汽车用品</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">母婴、玩具乐器</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">食品、酒类、生鲜、特产</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">医药保健</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">图书、音像、电子书</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">彩票、旅行、充值、票务</a>
+						</h3>
+						<i>></i>
+					</div>
+					<div class="item">
+						<h3>
+							<a href="#">理财、众筹、白条、保险</a>
+						</h3>
+						<i>></i>
+					</div>
+				</div>
+				<div class="sliderWrapper fl">
+					<div class="slider">
+						<a href="#">
+							<img src="images/slides/1.jpg">
+						</a>
+						<a href="#">
+							<img src="images/slides/2.jpg">
+						</a>
+						<a href="#">
+							<img src="images/slides/3.jpg">
+						</a>
+						<a href="#">
+							<img src="images/slides/4.jpg">
+						</a>
+						<a href="#">
+							<img src="images/slides/5.jpg">
+						</a>
+						<a href="#">
+							<img src="images/slides/6.jpg">
+						</a>
+					</div>
+				</div>
+				<aside class="fr extra">
+					<section class="news">
+						<div class="news-title">
+							<h2 class="fl">京东快报</h2>
+							<a href="" class="more fr">更多 ></a>
+						</div>
+						<ul class="news-content">
+							<li>
+								<a href="">
+									<span>[特惠]</span>
+									京东啤酒满199减100
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>[公告]</span>
+									京东最新捐赠物资抵达抗洪前线
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>[特惠]</span>
+									笔记本5折限量抢！
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>[公告]</span>
+									1号店周年庆诚邀您体验
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span>[特惠]</span>
+									好丽友 早餐乐生活 满99-40
+								</a>
+							</li>
+						</ul>
+					</section>
+					<section class="service">
+						<ul class="clearfix">
+							<li class="serv1">
+								<a href="#">
+									<i class="ci-left"></i>
+									<span>话费</span>
+								</a>
+							</li>
+							<li class="serv2">
+								<a href="">
+									<i class="ci-left"></i>
+									<span>机票</span>
+								</a>
+							</li>
+							<li class="serv3">
+								<a href="">
+									<i class="ci-left"></i>
+									<span>电影票</span>
+								</a>
+							</li>
+							<li class="serv4">
+								<a href="">
+									<i class="ci-left"></i>
+									<span>游戏</span>
+								</a>
+							</li>
+							<li class="serv5">
+								<a href="http://caipiao.jd.com/" target="_blank">
+									<i class="ci-left"></i>
+									<span>彩票</span>
+								</a>
+							</li>
+							<li class="serv6">
+								<a href="">
+									<i class="ci-left"></i>
+									<span>加油卡</span>
+								</a>
+							</li>
+							<li class="serv7">
+								<a href="">
+									<i class="ci-left"></i>
+									<span>酒店</span>
+									<i class="ci-tip"></i>
+								</a>
+							</li>
+							<li class="serv8">
+								<a href="">
+									<i class="ci-left"></i>
+									<span>火车票</span>
+								</a>
+							</li>
+							<li class="serv9">
+								<a href="">
+									<i class="ci-left"></i>
+									<span>众筹</span>
+								</a>
+							</li>
+							<li class="serv10">
+								<a href="">
+									<i class="ci-left"></i>
+									<span>理财</span>
+								</a>
+							</li>
+							<li class="serv11">
+								<a href="">
+									<i class="ci-left"></i>
+									<span>礼品卡</span>
+								</a>
+							</li>
+							<li class="serv12">
+								<a href="">
+									<i class="ci-left"></i>
+									<span>白条</span>
+									<i class="ci-tip"></i>
+								</a>
+							</li>
+						</ul>
+					</section>
+					<div class="right-pic">
+						<a href="#">
+							<img src="images/aside-ad.jpg" alt="促销">
+						</a>
+					</div>
+				</aside>
+			</div>
+		</div>
+		<!-- /list-slides-news-service -->
 
-            </div>
-        </div>
-    </div>
-    <div class="logo-search-cart">
-        <h1 class="logo">logo</h1>
-        <div class="search">搜索</div>
-        <div class="myShoppingcart">购物车按钮</div>
-    </div>
-
-    <div class="siteNav-wrapper">导航栏</div>
-
-    <div class="list-slides-news-services clearfix">
-        <div class="productCategoryList">商品列表</div>
-        <div class="adSlides">大轮播图</div>
-        <aside>
-            <section class="news">新闻</section>
-            <section class="services">服务</section>
-        </aside>
-    </div>
-
-</body>
+		<script src="javascripts/lib/jquery-1.12.4.js"></script>
+		<script src="javascripts/jd.js"></script>
+	</body>
 </html>
